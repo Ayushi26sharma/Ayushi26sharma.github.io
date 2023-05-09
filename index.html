@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Ayushi Sharma">
+<link rel="stylesheet" href="eatfresh.css"/>
+<link rel="stylesheet"
+href="k:\fontawesome\fontawesome-free-5.13.0-web\fontawesome-free-5.13.0-web\css\all.mini.css">
+<script>
+function stickyMenu() {
+    var sticky=document.getElementById('sticky');
+    if(window.pageYoffset > 220){
+        sticky.classList.add('sticky');
+    }
+    else{
+        sticky.classList.remove('sticky');
+    }
+} 
+window.onscroll = function() {
+    stickyMenu();
+}   
+</script>
+</html>
+<body>
+    <div class="parallax">
+        <div class="page-title">EAT FRESH</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#deals" class="a-menu"><li>Deals</li></a>
+            <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+            <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+            <a href="#meat" class="a-menu"><li>Meat</li></a>
+            <a href="#" class="a-menu"><li>Cart</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search..." name="Search"
+                class="search-input"/>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#vegetables">
+            <div class="categories">
+                <img src="greenpepper.jpg" class="item-image"/>
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#fruits">
+            <div class="categories">
+                <img src="strawberry.webp" class="item-image"/>
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="chicken.jpg" class="item-image"/>
+                <div class="image-title">Meat & Seafood</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="deals.jpg" class="item-image"/>
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+    </div>
+    <div class="deals-container" id="deals">
+        <div class="parallax">
+            <div class="title">DEALS</div>
+        </div>
+    <div class="deal">
+        Save 20% on min-purchase of Rs250 on Vegetables
+        <button class="coupon-btn">Add coupon</button>
+    </div>
+    <div class="deal">
+        Save 10% on min-purchase of Rs300 on Fruits
+        <button class="coupon-btn">Add coupon</button>
+    </div><div class="deal">
+        Save 15% on min-purchase of Rs 400 on Meat/Sea food
+        <button class="coupon-btn">Add coupon</button>
+    </div>
+    <div class="deals-container" id="vegetables">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+    <div class="items">
+        <div class="images">
+        <img src="tomato.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b>Organic Tomatos</b><br>
+            <div class="item-select">
+            Price:Rs 50/kg
+            </div>
+            <label>Qty:</label>
+                <select class="item-select">
+                    <option>1kg</option>
+                    <option>2kg</option>
+                    <option>3kg</option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="carrot.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Carrot</b><br>
+                    <div class="item-select">
+                        Price:Rs 45/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="greenpepper.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic GreenPepper</b><br>
+                    <div class="item-select">
+                        Price:Rs 30/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="onion.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Onion</b><br>
+                    <div class="item-select">
+                        Price:Rs 40/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="spinach.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Organic Spinach</b><br>
+                    <div class="item-select">
+                        Price:Rs 28/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Fruits-contains" id="fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+            <div class="items">
+                <div class="images">
+                    <img src="strawberry.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>strawberries</b><br>
+                    <div class="item-select">
+                        Price:Rs 80/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="apple.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Apple</b><br>
+                    <div class="item-select">
+                        Price:Rs 60/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="mango.avif" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Mango</b><br>
+                    <div class="item-select">
+                        Price:Rs 90/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="orange.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Onion</b><br>
+                    <div class="item-select">
+                        Price:Rs 50/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="Watermelon.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Watermelon</b><br>
+                    <div class="item-select">
+                        Price:Rs 70/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Meat-contains" id="meat">
+        <div class="parallax">
+            <div class="title">MEAT & SEAFOOD</div>
+        </div>
+            <div class="items">
+                <div class="images">
+                    <img src="chicken.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Chicken</b><br>
+                    <div class="item-select">
+                        Price:Rs 100/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="lamb.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Lamb</b><br>
+                    <div class="item-select">
+                        Price:Rs 120/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="fish.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Fish</b><br>
+                    <div class="item-select">
+                        Price:Rs 70/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="prawns.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Prawns</b><br>
+                    <div class="item-select">
+                        Price:Rs 80/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="shell.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Shells</b><br>
+                    <div class="item-select">
+                        Price:Rs 50/kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1kg</option>
+                        <option>2kg</option>
+                        <option>3kg</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax1">
+        <div class="footer">
+            <div class="quick-links">
+                <div>Location</div>
+                <ul>
+                   <li><a href="" class="a-links">Address 1</a></li>
+                   <li><a href="" class="a-links">Address 2</a></li>
+                   <li><a href="" class="a-links">Address 3</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Career</div>
+                <ul>
+                   <li><a href="" class="a-links">Packing staff</a></li>
+                   <li><a href="" class="a-links">Packing staff</a></li>
+                   <li><a href="" class="a-links">Shelf fillers</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Quick Links</div>
+                <ul>
+                   <li><a href="" class="a-links">contact Us</a></li>
+                   <li><a href="" class="a-links">FAQ</a></li>
+                   <li><a href="" class="a-links">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyrights">
+        <i class="Far fa-copyright fa-1x"></i>&#169 2023 By Eat Fresh
+    </div>
+
+</body>
+</html>
